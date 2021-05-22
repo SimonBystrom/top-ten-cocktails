@@ -6,12 +6,13 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 puts '... creating cocktail seeds'
-@old_fashioned = Cocktail.new(name: 'old_fashioned', time: 3, instructions: '
+@old_fashioned = Cocktail.new(name: 'Old Fashioned', time: 3, instructions: '
 1. Add the sugar and bitters to a rocks glass, then add water, and stir until sugar is nearly dissolved.
 
 2. Fill the glass with large ice cubes, add the bourbon, and gently stir to combine.
 
-3. Express the oil of an orange peel over the glass, then drop in.')
+3. Express the oil of an orange peel over the glass, then drop in.'
+img_path: 'old-fashioned.png')
 @old_fashioned.save
 
 # Ingredients

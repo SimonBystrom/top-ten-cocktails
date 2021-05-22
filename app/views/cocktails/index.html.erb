@@ -1,10 +1,16 @@
-<h1>Cocktails#index</h1>
-<% @cocktails.each do |cocktail| %>
-<div class="cocktail-card">
-  <%= image_tag cocktail.img_path, class: 'cocktail-img' %>
-  <div class="cocktail-info-overlay">
-   <h3 class="cocktail-name"> <%= cocktail.name %> </h3>
+<div class="home-banner">
+  <h1>Cocktails#index</h1>
+  <% @cocktails.each do |cocktail| %>
+  <div class="cocktail-card">
+    <%= image_tag cocktail.img_path, class: 'cocktail-img' %>
+    <div class="cocktail-info-overlay">
+      <div class="cocktail-name">
+        <h3> <%= cocktail.name %> </h3>
+        <p> <strong>Cocktime: </strong> <%= cocktail.time %> min </p>
+      </div>
+    </div>
+     <%= link_to "", cocktail_path(cocktail), class: 'cocktail-link'  %>
   </div>
-   <%= link_to "", cocktail_path(cocktail), class: 'cocktail-link'  %>
+  <% end %>
+
 </div>
-<% end %>

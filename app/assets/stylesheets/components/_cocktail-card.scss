@@ -13,8 +13,8 @@
 
 .cocktail-img{
   display: block;
-  width: 300px;
-  height: auto;
+  width: 200px;
+  height: 200px;
   &:hover {
     cursor: pointer;
   }
@@ -25,15 +25,16 @@
   position: absolute;
   bottom: 0;
   right: 0;
-  left: 300px;
-  background-color: $light-gray;
+  left: 200px;
+  opacity: 0.7;
+  background-color: #303030;
   overflow: hidden;
   width: 0;
   height: 100%;
   transition: .5s ease-in-out;
   .cocktail-name {
-    color: black;
-    font-size: 24px;
+    color: white;
+    opacity: 1;
     position: absolute;
     top: 50%;
     left: 50%;
