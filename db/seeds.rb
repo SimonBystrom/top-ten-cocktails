@@ -8,6 +8,8 @@
 puts '... creating cocktail seeds'
 
 
+# TO DO CREATE AND SEED MARTINI!!
+
 # Ingredients
 @whiskey = Ingredient.new(name: 'Whiskey')
 @sugar = Ingredient.new(name: 'Sugar')
