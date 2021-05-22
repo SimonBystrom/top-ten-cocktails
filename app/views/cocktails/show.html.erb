@@ -2,4 +2,6 @@
 <% @cocktail.recipes.each do |recipe| %>
   <h5> <%= recipe.ingredient.name %> </h5>
   <p> <%= recipe.amount %> </p>
+
 <% end %>
+<%= link_to "Back", cocktails_path  %>

@@ -1,4 +1,10 @@
 <h1>Cocktails#index</h1>
 <% @cocktails.each do |cocktail| %>
- <p> <%= cocktail.name %> </p>
+<div class="cocktail-card">
+  <%= image_tag cocktail.img_path, class: 'cocktail-img' %>
+  <div class="cocktail-info-overlay">
+   <h3 class="cocktail-name"> <%= cocktail.name %> </h3>
+  </div>
+   <%= link_to "", cocktail_path(cocktail), class: 'cocktail-link'  %>
+</div>
 <% end %>
