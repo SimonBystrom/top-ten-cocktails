@@ -5,8 +5,8 @@
     <div class="d-flex flex-column align-items-center border-right border-secondary">
       <%= image_tag @cocktail.img_path, class: 'deactive' %>
       <% @cocktail.recipes.each do |recipe| %>
-        <% if recipe.img_path %>
-          <%= image_tag recipe.img_path, class: 'ingredient-img' %>
+        <% if recipe.ingredient.img_path %>
+          <%= image_tag recipe.ingredient.img_path, class: 'ingredient-img' %>
         <% else %>
           <h5> <%= recipe.ingredient.name %> </h5>
         <% end %>
