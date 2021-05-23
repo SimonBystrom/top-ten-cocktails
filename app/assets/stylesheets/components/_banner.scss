@@ -2,7 +2,7 @@
   background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('banner.jpeg');
   background-size: cover;
   // height: 100vh;
-  min-height: 100vh;
+  // min-height: 100vh;
   color: #eee;
   padding-top: 20vh;
   padding-left: 5vw;
@@ -12,4 +12,33 @@
     color: $light-gray;
   }
 
+}
+
+.home-banner-main {
+  background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('banner.jpeg');
+  background-size: cover;
+  // height: 100vh;
+  min-height: 100vh;
+  color: #eee;
+  padding-top: 35vh;
+  padding-left: 15vw;
+  // padding-right: 5vw;
+  // padding-bottom: 10vh
+
+}
+
+.home-banner-main h1 {
+  margin: 0;
+  margin-bottom: 20px;
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.home-banner-main p {
+  font-size: 20px;
+  color: white;
+  opacity: .7;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
 }
