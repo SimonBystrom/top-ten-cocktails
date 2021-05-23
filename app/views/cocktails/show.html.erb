@@ -1,18 +1,18 @@
 
 <div class="home-banner">
-  <h1 class="border-bottom p-2"> <%= @cocktail.name %> </h1>
+  <h1 class="p-2"> <%= @cocktail.name %> </h1>
   <div class="d-flex">
     <div class="d-flex flex-column align-items-center border-right">
-      <%= image_tag @cocktail.img_path, class: 'cocktail-img deactive' %>
+      <%= image_tag @cocktail.img_path, class: 'deactive' %>
       <% @cocktail.recipes.each do |recipe| %>
         <h5> <%= recipe.ingredient.name %> </h5>
         <p> <%= recipe.amount %> </p>
       <% end %>
       <%= link_to "Back", cocktails_path  %>
     </div>
-    <div class="flex-grow-1 p-3">
+    <div class="flex-grow-1 pl-5 pt-3 instructions">
       <h3 class="">Instructions </h3>
-      <p> <%= @cocktail.instructions %> </p>
+      <p> <%= simple_format(@cocktail.instructions) %>  </p>
     </div>
 
   </div>
@@ -20,3 +20,4 @@
 
 
 </div>
+
