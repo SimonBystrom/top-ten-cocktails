@@ -1,15 +1,22 @@
 <div class="home-banner">
-  <h2 class='ml-3 p-2 border-bottom border-secondary'> Cocktails </h2>
+  <h2 class='ml-3 p-2 border-bottom border-secondary' style="width: 60vw"> Cocktails </h2>
   <% @cocktails.each do |cocktail| %>
-  <div class="cocktail-card">
-    <%= image_tag cocktail.img_path, class: 'cocktail-img' %>
-    <div class="cocktail-info-overlay">
-      <div class="cocktail-name">
-        <h3> <%= cocktail.name %> </h3>
-        <p> <strong>Cocktime: </strong> <%= cocktail.time %> min </p>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 col-md-6 col-lg-4 col-xl-2">
+        <div class="cocktail-card">
+          <%= image_tag cocktail.img_path, class: 'cocktail-img' %>
+          <div class="cocktail-info-overlay">
+            <div class="cocktail-name">
+              <h3> <%= cocktail.name %> </h3>
+              <p> <strong>Cocktime: </strong> <%= cocktail.time %> min </p>
+            </div>
+          </div>
+           <%= link_to "", cocktail_path(cocktail), class: 'cocktail-link'  %>
+        </div>
+
       </div>
     </div>
-     <%= link_to "", cocktail_path(cocktail), class: 'cocktail-link'  %>
   </div>
   <% end %>
 

@@ -27,31 +27,31 @@ puts '... creating cocktail seeds'
 
 
 # Cocktails
-@old_fashioned = Cocktail.new(name: 'Old Fashioned', time: 3, instructions: '
-1. Add the sugar and bitters to a rocks glass, then add water, and stir until sugar is nearly dissolved.
+5.times do
+  @old_fashioned = Cocktail.new(name: 'Old Fashioned', time: 3, instructions: '
+  1. Add the sugar and bitters to a rocks glass, then add water, and stir until sugar is nearly dissolved.
 
-2. Fill the glass with large ice cubes, add the bourbon, and gently stir to combine.
+  2. Fill the glass with large ice cubes, add the bourbon, and gently stir to combine.
 
-3. Express the oil of an orange peel over the glass, then drop in.',
-img_path: 'old-fashioned.png')
-@old_fashioned.save
+  3. Express the oil of an orange peel over the glass, then drop in.',
+  img_path: 'old-fashioned.png')
+  @old_fashioned.save
 
-# Recipies
-# -> Old Fashioned
-@old_fashioned_whiskey = Recipe.new(cocktail: @old_fashioned, ingredient: @whiskey, amount: '30 cl')
-@old_fashioned_whiskey.save
+  # Recipies
+  # -> Old Fashioned
+  @old_fashioned_whiskey = Recipe.new(cocktail: @old_fashioned, ingredient: @whiskey, amount: '30 cl')
+  @old_fashioned_whiskey.save
 
-@old_fashioned_sugar = Recipe.new(cocktail: @old_fashioned, ingredient: @sugar, amount: '1/2 teaspoon')
-@old_fashioned_sugar.save
+  @old_fashioned_sugar = Recipe.new(cocktail: @old_fashioned, ingredient: @sugar, amount: '1/2 teaspoon')
+  @old_fashioned_sugar.save
 
-@old_fashioned_angostura_bitters = Recipe.new(cocktail: @old_fashioned, ingredient: @angostura_bitters, amount: '3 dashes')
-@old_fashioned_angostura_bitters.save
+  @old_fashioned_angostura_bitters = Recipe.new(cocktail: @old_fashioned, ingredient: @angostura_bitters, amount: '3 dashes')
+  @old_fashioned_angostura_bitters.save
 
-@old_fashioned_water = Recipe.new(cocktail: @old_fashioned, ingredient: @water, amount: '1 teaspoon')
-@old_fashioned_water.save
+  @old_fashioned_water = Recipe.new(cocktail: @old_fashioned, ingredient: @water, amount: '1 teaspoon')
+  @old_fashioned_water.save
 
-@old_fashioned_orange_peel = Recipe.new(cocktail: @old_fashioned, ingredient: @orange_peel, amount: 'Garnish')
-@old_fashioned_orange_peel.save
-
-
+  @old_fashioned_orange_peel = Recipe.new(cocktail: @old_fashioned, ingredient: @orange_peel, amount: 'Garnish')
+  @old_fashioned_orange_peel.save
+end
 puts "created #{Cocktail.all.count} number of cocktails"
