@@ -1,8 +1,8 @@
 
 <div class="home-banner">
-  <h1 class="p-2"> <%= @cocktail.name %> </h1>
+  <h1 class="p-2 mb-4"> <%= @cocktail.name %> </h1>
   <div class="d-flex">
-    <div class="d-flex flex-column align-items-center border-right">
+    <div class="d-flex flex-column align-items-center border-right border-secondary">
       <%= image_tag @cocktail.img_path, class: 'deactive' %>
       <% @cocktail.recipes.each do |recipe| %>
         <h5> <%= recipe.ingredient.name %> </h5>

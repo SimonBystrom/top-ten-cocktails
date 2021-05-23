@@ -13,7 +13,13 @@
 
   <body>
     <div class="navbar fixed-top">
-      <h1>Top Ten Cocktails</h1>
+      <div class="main-logo d-flex">
+  <!--       <i class="far fa-cocktail"></i> -->
+        <%= link_to cocktails_path, class: 'main-link' do %>
+          <h1>Top Ten Cocktails</h1>
+        <% end %>
+      </div>
+
     <!--   <a href="" class="btn-yours">Search</a> -->
     </div>
     <%= yield %>

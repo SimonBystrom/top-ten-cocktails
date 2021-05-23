@@ -2,8 +2,10 @@
   justify-content: space-between;
   background-color: transparent;
   transition: 0.5s background-color ease;
+  padding-left: 38vw;
   h1{
     color: $light-gray;
+
   }
 }
 
@@ -21,3 +23,17 @@
     color:black;
   }
 }
+
+.main-logo {
+  a{
+    text-decoration: none;
+  }
+
+}
+
+// .main-logo{
+//   i{
+//     color: $light-gray;
+//     font-size: 24px;
+//   }
+// }
