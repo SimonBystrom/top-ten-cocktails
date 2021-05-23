@@ -11,10 +11,10 @@ puts '... creating cocktail seeds'
 # TO DO CREATE AND SEED MARTINI!!
 
 # Ingredients
-@whiskey = Ingredient.new(name: 'Whiskey')
+@whiskey = Ingredient.new(name: 'Whiskey', img_path: 'whiskey.png')
 @sugar = Ingredient.new(name: 'Sugar')
 @water = Ingredient.new(name: 'Water')
-@bourbon = Ingredient.new(name: 'Bourbon')
+@bourbon = Ingredient.new(name: 'Bourbon'  img_path: 'whiskey.png')
 @angostura_bitters = Ingredient.new(name: 'Angostura Bitters')
 @orange_peel = Ingredient.new(name: 'Orange peel')
 
